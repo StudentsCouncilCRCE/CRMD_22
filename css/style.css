@@ -18,7 +18,7 @@ body {
   background: #ffffff;
 }
 .banner {
-  background: url(../images/bg_new.jpg) no-repeat 0px 0px;
+  background: url(../images/bg.gif) no-repeat 0px 0px;
   background-size: cover;
 }
 @media screen and (max-width: 480px) {
@@ -450,13 +450,14 @@ footer,
 .agileits-heading h2,
 .agileits-heading h3,
 .wthree-heading h2 {
-  color: black;
+  color: white;
   font-size: 3.5em;
   margin: 0;
   text-align: center;
   text-transform: uppercase;
   font-weight: 300;
 }
+
 .about-top-grids,
 .services-grids,
 .wthree-services-bottom-grids,
@@ -1797,6 +1798,15 @@ figure.effect-apollo:hover p {
   .contact h4 {
     letter-spacing: 1px;
   }
+}
+
+.services {
+  background: url(../images/1.jpg) no-repeat;
+  background-size: cover;
+}
+
+#rules .agileits-heading h3 {
+  color: black;
 }
 
 /* Register Buttons */
