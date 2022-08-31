@@ -5,6 +5,10 @@ body a {
   -moz-transition: 0.5s all;
   -ms-transition: 0.5s all;
 }
+
+a:hover {
+  text-decoration: none;
+}
 html,
 body {
   font-size: 100%;
@@ -68,7 +72,7 @@ body {
   color: #ffe135;
 }
 .w3layouts-logo {
-  float: left;
+  /* float: left; */
   width: 40%;
 }
 .w3layouts-logo h1 {
@@ -422,30 +426,7 @@ ul.dropdown-menu li {
   width: 14%;
   margin: 3em auto 2em;
 }
-.w3-button {
-  margin: 0;
-  padding: 1em;
-  z-index: 1;
-  text-align: center;
-}
-.w3-button a {
-  color: #ffffff;
-  font-size: 0.9em;
-  padding: 0.5em 1em;
-  border: solid 1px #ffffff;
-  text-decoration: none;
-  margin: 0;
-  background: none;
-  text-transform: uppercase;
-}
-.w3-button a:hover {
-  background: #fbd232;
-  border: solid 1px #fbd232;
-  color: #212121;
-}
-.w3-button a:focus {
-  outline: none;
-}
+
 .about-w3layouts,
 .services,
 .services-bottom,
@@ -464,7 +445,7 @@ footer,
 .agileits-heading h2,
 .agileits-heading h3,
 .wthree-heading h2 {
-  color: #212121;
+  color: white;
   font-size: 3.5em;
   margin: 0;
   text-align: center;
@@ -480,7 +461,7 @@ footer,
   margin: 4em 0 0 0;
 }
 .w3-about-left h5 {
-  color: #000000;
+  color: white;
   font-size: 2em;
   text-transform: uppercase;
   font-weight: 600;
@@ -488,7 +469,7 @@ footer,
   margin: 0;
 }
 .w3-about-left p {
-  color: #2d2c2c;
+  color: wheat;
   font-size: 1em;
   line-height: 1.8em;
   margin: 1em 0 0 0;
@@ -501,7 +482,7 @@ footer,
   text-align: center;
 }
 .w3l-button a {
-  color: #212121;
+  color: white;
   font-size: 0.9em;
   text-decoration: none;
   padding: 0.5em 2em;
@@ -509,7 +490,7 @@ footer,
   text-transform: uppercase;
   font-weight: 600;
   text-align: center;
-  border: solid 1px #000000;
+  border: solid 1px white;
 }
 .w3l-button a:hover {
   background: #fbd232;
@@ -766,6 +747,7 @@ a.pa_italic:focus {
 }
 .testimonials-heading h3 {
   color: #ffffff;
+  margin-bottom: 50px;
 }
 .w3_agileits_header:after {
   left: 25% !important;
@@ -865,9 +847,9 @@ footer {
   text-transform: uppercase;
 }
 .agile-footer-info p {
-  color: #dee4ed;
+  color: wheat;
   font-size: 1em;
-  margin: 0;
+  margin: 20px;
   line-height: 1.5em;
 }
 .agile-footer-info h5 {
@@ -1802,4 +1784,292 @@ figure.effect-apollo:hover p {
   .contact h4 {
     letter-spacing: 1px;
   }
+}
+
+/* Register Buttons */
+.button-56 {
+  align-items: center;
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-56:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform 0.2s ease-out;
+  z-index: -1;
+}
+
+.button-56:hover:after {
+  transform: translate(0, 0);
+}
+
+.button-56:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.button-56:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button-56 {
+    padding: 0 40px;
+  }
+}
+
+.test-cont {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+  justify-content: center;
+}
+
+.test-cont .box {
+  position: relative;
+  padding: 40px;
+  transition: 0.5s;
+  text-align: center;
+  background: #fff;
+  padding-top: 100px;
+  margin-left: 50px;
+}
+
+.test-cont .box:hover {
+  background: crimson;
+}
+
+.test-cont .box p {
+  margin: 0;
+  padding: 0;
+  transition: 0.5s;
+}
+
+.test-cont .box h4 {
+  margin: 20px 0 0;
+  padding: 0;
+  transition: 0.5s;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: crimson;
+}
+
+.test-cont .box h4 span {
+  font-weight: 600;
+  font-size: 14px;
+  color: #777777;
+  transition: 0.5s;
+}
+
+.test-cont .box:hover p,
+.test-cont .box:hover h4,
+.test-cont .box:hover h4 span {
+  color: #fff;
+}
+
+.test-cont .box .img-box img {
+  width: 150px;
+  height: 150px;
+}
+
+.test-cont .box .img-box {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -60px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.test-cont .box:before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  width: 80px;
+  height: 80px;
+  background: url(https://static.thenounproject.com/png/275849-200.png);
+  background-size: cover;
+  opacity: 0.1;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.test-cont .box:hover:before {
+  transform: translateY(-60px);
+  opacity: 1;
+}
+
+.test-cont .box:after {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  width: 80px;
+  height: 80px;
+  background: url(https://static.thenounproject.com/png/275849-200.png);
+  background-size: cover;
+  opacity: 0.1;
+  pointer-events: none;
+  transition: 0.5s;
+  transform: rotate(180deg) translateY(0px);
+}
+
+.test-cont .box:hover:after {
+  transform: rotate(180deg) translateY(-60px);
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .test-cont .box {
+    margin-top: 80px;
+  }
+}
+
+/* Social Media Icons */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+
+footer {
+  background: #261011;
+  color: #e68a64;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  line-height: 187.5%;
+  letter-spacing: 0.01em;
+}
+
+#testimonials {
+  padding: 50px;
+}
+
+#about {
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23060000' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%230c0101' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23120101' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23180202' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%231E0202' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+/* glass */
+.glass {
+  /* From https://css.glass */
+  background: rgba(30, 2, 2, 0.334);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.267);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 50px;
+}
+
+.footer-social-links {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 40px;
+}
+.footer-social-links a {
+  width: 50px;
+  height: 50px;
+  line-height: 20px !important;
+  position: relative;
+  margin: 0 25px;
+  text-align: center;
+  display: inline-block;
+  color: white;
+
+  -webkit-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+  -moz-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+  -o-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+  -ms-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+  transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+}
+.footer-social-links a i,
+.footer-social-links a span {
+  position: relative;
+  top: 12px;
+  left: 1px;
+}
+.footer-social-links a:before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid white;
+
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+  -webkit-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+  -moz-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+  -o-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+  -ms-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+  transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+}
+.footer-social-links a:hover {
+  color: #fff;
+}
+.footer-social-links a:hover:before {
+  background: wheat;
 }
