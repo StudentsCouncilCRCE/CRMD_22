@@ -330,6 +330,28 @@
             </div>
         </div>
     </div>
+    <!-- <div class="wrapper">
+        <div class="count-container">
+            <!-- <i class="fas fa-utensils"></i> 
+            <span class="num" data-val="400">000</span>
+            <span class="text">Meals Delivered</span>
+        </div>
+        <div class="count-container">
+            <!-- <i class="fas fa-smile-beam"></i> 
+            <span class="num" data-val="340">000</span>
+            <span class="text">Happy Customers</span>
+        </div>
+        <div class="count-container">
+            <!-- <i class="fas fa-list"></i> 
+            <span class="num" data-val="225">000</span>
+            <span class="text">Menu Items</span>
+        </div>
+        <div class="count-container">
+            <!-- <i class="fas fa-star"></i> 
+            <span class="num" data-val="280">000</span>
+            <span class="text">Five Stars</span>
+        </div>
+    </div> -->
     <!-- //services -->
     <!-- services-bottom -->
     <div class="services-bottom" id="rules">
@@ -339,7 +361,8 @@
             </div>
             <div class="wthree-services-bottom-grids">
                 <div class="col-md-6 wthree-services-left">
-                    <a href="./images/poster.jpg" target="_blank"><img src="./images/poster.jpg" alt="theme" /></a>
+                    <a href="./images/crmd_poster.jpeg" target="_blank"><img src="./images/crmd_poster.jpeg"
+                            alt="theme" /></a>
                 </div>
                 <div class="col-md-6 wthree-services-right">
                     <div class="wthree-services-right-top">
@@ -566,6 +589,22 @@
 
         });
 
+    </script>
+    <script>
+        let valueDisplays = document.querySelectorAll(".num");
+        let interval = 4000;
+        valueDisplays.forEach((valueDisplay) => {
+            let startValue = 0;
+            let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+            let duration = Math.floor(interval / endValue);
+            let counter = setInterval(function () {
+                startValue += 1;
+                valueDisplay.textContent = startValue;
+                if (startValue == endValue) {
+                    clearInterval(counter);
+                }
+            }, duration);
+        });
     </script>
     <script type="text/javascript" src="js/jquery.flexisel.js"></script>
     <script src="js/smoothscroll.js"></script>
